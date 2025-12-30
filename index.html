@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Mateus - Desenvolvedor Trainee</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+        }
+
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
+        }
+
+        .accent-text {
+            color: #38bdf8;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+        }
+
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background-color: #38bdf8;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- Header / Hero Section -->
+    <header class="py-16 px-6 max-w-5xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+           
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
+                <!-- Placeholder para Imagem de Perfil -->
+                <div class="w-32 h-32 md:w-40 md:h-40 rounded-none overflow-hidden profile-img bg-slate-800 flex items-center justify-center">
+                    
+                    <!-- Para usar sua foto real, substitua o <i> acima por:-->
+                    <img src="Captura de tela 2025-12-30 171748.png" alt="João Mateus" class="w-full h-full object-cover"> 
+                    
+                </div>
+           
+            <div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-2">João Mateus Santos de França</h1>
+                <p class="text-xl accent-text font-medium mb-4">Estudante de Análise e Desenvolvimento de Sistemas  | ADS</p>
+                <div class="flex flex-wrap gap-4 text-sm text-slate-400">
+                    <span><i class="fas fa-map-marker-alt mr-2"></i>Rio de Janeiro, RJ (Santa Cruz)</span>
+                    <span><i class="fas fa-phone mr-2"></i>(21) 977084958</span>
+                    <span><i class="fas fa-envelope mr-2"></i>joaomateus89@email.com</span>
+                    <span class="bg-blue-900/40 text-blue-200 px-2 py-0.5 rounded text-xs font-semibold uppercase tracking-wider">PCD</span>
+                </div>
+            </div>
+            <div class="flex gap-4">
+                <a href="https://linkedin.com" target="_blank" class="p-3 glass-card rounded-full text-2xl hover:text-blue-400">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Joao22041992" target="_blank" class="p-3 glass-card rounded-full text-2xl hover:text-white">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://drive.google.com/file/d/1ypZP9CSNDGDHx7rbqIICA2vBaijyU9IY/view?usp=sharing" target="_blank" class="p-3 glass-card rounded-full text-2xl hover:text-white" title="Meu Currículo">
+    <i class="fas fa-briefcase"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 pb-24 space-y-16">
+        
+        <!-- About & Objective -->
+        <section class="grid md:grid-cols-2 gap-8">
+            <div class="glass-card p-8 rounded-2xl">
+                <h2 class="text-2xl font-bold mb-4 section-title">Resumo Profissional</h2>
+                <p class="text-slate-300 leading-relaxed">
+                    Estudante de Análise e Desenvolvimento de Sistemas com foco em resolução de problemas e aprendizado contínuo. 
+                    Atualmente desenvolvendo competências em lógica de programação, estruturas de dados e desenvolvimento de software. 
+                    Busco uma oportunidade para aplicar os conhecimentos acadêmicos em um ambiente profissional.
+                </p>
+            </div>
+            
+            <div class="glass-card p-8 rounded-2xl">
+                <h2 class="text-2xl font-bold mb-4 section-title">Educação</h2>
+                <div class="space-y-4">
+                    <div>
+                        <h3 class="font-semibold text-lg">Tecnologia em Análise e Desenvolvimento de Sistemas</h3>
+                        <p class="accent-text">
+                            <a href="https://www.faeterj-rio.edu.br/" target="_blank" class="hover:underline">FAETERJ-RJ (Unidade Quintino Bocaiúva)</a>
+                        </p>
+                        <p class="text-sm text-slate-400 mt-1">Status: Em andamento</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section>
+            <h2 class="text-2xl font-bold mb-8 section-title">Projetos em Destaque</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Project 1 -->
+                <a href="https://copains-pv.github.io/Mais-Chegados-Que-Irm-os/" target="_blank" class="glass-card p-6 rounded-xl hover:bg-slate-800/50 block">
+                    <i class="fas fa-shopping-cart text-3xl mb-4 accent-text"></i>
+                    <h3 class="font-bold mb-2">E-commerce Ativo</h3>
+                    <p class="text-sm text-slate-400">Site de vendas em funcionamento real.</p>
+                </a>
+                <!-- Project 2 -->
+                <div class="glass-card p-6 rounded-xl">
+                    <a href="https://joao22041992.github.io/DevChallenge-O-Jogo-de-Fixa-o-da-Technology-Company/">
+                        <i class="fas fa-code text-3xl mb-4 accent-text"></i>
+                        <h3 class="font-bold mb-2">Quiz HTML</h3>
+                        <p class="text-sm text-slate-400">Desafio de desenvolvimento focado em HTML, CSS & JS.</p>
+                    </a>
+                </div>
+                <!-- Project 3 -->
+                <div class="glass-card p-6 rounded-xl">
+                    <a href="https://joao22041992.github.io/-Technology-Company-Ingl-s-Basic/">
+                        <i class="fas fa-language text-3xl mb-4 accent-text"></i>
+                        <h3 class="font-bold mb-2">English Practice</h3>
+                        <p class="text-sm text-slate-400">Plataforma de exercícios para prática de gramática inglesa.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates -->
+        <section>
+            <h2 class="text-2xl font-bold mb-8 section-title">Certificações e Cursos</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- Tech Focus -->
+                <div class="p-4 rounded-lg bg-blue-500/10 border border-blue-500/30">
+                    <h3 class="font-bold text-blue-400 mb-2 border-b border-blue-500/20 pb-1">Programação</h3>
+                    <ul class="text-sm space-y-1">
+                        <li>• Introdução a Python</li>
+                        <li>• Intensivo de JavaScript</li>
+                        <li>• Programação em C#</li>
+                        <li>• Lógica de Programação</li>
+                    </ul>
+                </div>
+                
+                <!-- Cloud & Infra -->
+                <div class="p-4 rounded-lg bg-purple-500/10 border border-purple-500/30">
+                    <h3 class="font-bold text-purple-400 mb-2 border-b border-purple-500/20 pb-1">Cloud & IA</h3>
+                    <ul class="text-sm space-y-1">
+                        <li>• Cloud DevOps</li>
+                        <li>• Imersão em IA</li>
+                        <li>• Segurança em Redes</li>
+                        <li>• Power BI</li>
+                    </ul>
+                </div>
+
+                <!-- Office Tools -->
+                <div class="p-4 rounded-lg bg-green-500/10 border border-green-500/30">
+                    <h3 class="font-bold text-green-400 mb-2 border-b border-green-500/20 pb-1">Excel & Office</h3>
+                    <ul class="text-sm space-y-1">
+                        <li>• Excel (Módulos I, II, III)</li>
+                        <li>• Excel para Iniciantes</li>
+                        <li>• Excel para Adm</li>
+                        <li>• Word Essencial</li>
+                    </ul>
+                </div>
+
+                <!-- Professional -->
+                <div class="p-4 rounded-lg bg-amber-500/10 border border-amber-500/30">
+                    <h3 class="font-bold text-amber-400 mb-2 border-b border-amber-500/20 pb-1">Produtividade</h3>
+                    <ul class="text-sm space-y-1">
+                        <li>• Digitação em Prática</li>
+                        <li>• Google Sites</li>
+                        <li>• Ferramentas Digitais</li>
+                        <li>• Redes Sociais</li>
+
+                       
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-8 text-center">
+                <p class="text-slate-500 text-sm italic">E outros: Fotografia com Celular, Implementação Google, Atalhos de Teclado.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-8 border-t border-slate-800 text-center text-slate-500 text-sm">
+        <p>© 2025 João Mateus Santos de França. Desenvolvido com foco em Tecnologia.</p>
+    </footer>
+
+</body>
+</html>
